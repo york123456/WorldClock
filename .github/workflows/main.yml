@@ -1,5 +1,8 @@
 name: Run Python Script on Schedule
 
+permissions:
+  contents: write
+
 on:
   schedule:
     # 每天台灣時間早上 9 點執行 (UTC+8 → UTC 1 點)
