@@ -27,9 +27,22 @@ out_cfg = config["output_settings"]
 #api_keys = config["api_keys"]
 
 
+x=out_cfg
+print(f"var ={x},  Type: {type(x)}")
+if hasattr(x, 'shape'): print(f"Shape: {x.shape}")
+if hasattr(x, 'size'):  print(f"Size: {x.size}")
+if hasattr(x, '__len__'): print(f"Length: {len(x)}")
+
 
 #if env_owm_key:
 api_keys= os.getenv("OWM_API_KEY")
+
+
+x=api_keys
+print(f"var ={x},  Type: {type(x)}")
+if hasattr(x, 'shape'): print(f"Shape: {x.shape}")
+if hasattr(x, 'size'):  print(f"Size: {x.size}")
+if hasattr(x, '__len__'): print(f"Length: {len(x)}")
 
 
 # ==========================================
