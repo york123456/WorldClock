@@ -154,9 +154,9 @@ if map_cfg["show_radar"]:
         print(f"RainViewer 資料獲取失敗: {e}")
 
 # -- [圖層 7] OWM 氣溫圖
-if map_cfg["show_temperature"] and api_keys["openweathermap"]:
+if map_cfg["show_temperature"] and api_keys:
     folium.TileLayer(
-     tiles=f"https://tile.openweathermap.org/map/temp_new/{{z}}/{{x}}/{{y}}.png?APPID={api_keys['openweathermap']}",
+     tiles=f"https://tile.openweathermap.org/map/temp_new/{{z}}/{{x}}/{{y}}.png?APPID={api_keys}",
         attr='OWM', transparent=True, opacity=0.5
     ).add_to(world_map)
 
