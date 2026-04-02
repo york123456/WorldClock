@@ -101,10 +101,14 @@ if map_cfg["show_cities"]:
         
         # 文字標籤
         label_html = f"""
-        <div style="color: white; font-family: sans-serif; font-size: 11px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+        <div style="color: white; font-family: 'Noto Sans CJK TC', 'Microsoft JhengHei', sans-serif;
+                    font-size: 11px; font-weight: bold; text-shadow: 1px 1px 2px black;">
             {city["name"]} <span style="color: #FF9500;">{current_time}</span>
         </div>
         """
+        
+
+        
         folium.Marker(
             location=[city['lat'], city['lon']],
             icon=DivIcon(icon_size=(100, 20), icon_anchor=(-5, 10), html=label_html)
