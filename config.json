@@ -1,0 +1,21 @@
+{
+    "output_settings": {
+        "image_filename": "global_map_export.png",
+        "temp_html_filename": "temp_map.html",
+        "resolution": {"width": 1920, "height": 1080},
+        "wait_time_seconds": 5
+    },
+    "api_keys": {
+        "openweathermap": "" 
+    },
+    "map_settings": {
+        "base_map": "dark", 
+        "show_terminator": true,
+        "show_cities": true,
+        "show_earthquakes": true,
+        "show_iss": true,
+        "show_clouds": true,
+        "show_radar": true,
+        "show_temperature": true
+    }
+}

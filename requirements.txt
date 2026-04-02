@@ -1,0 +1,5 @@
+folium
+selenium
+webdriver-manager
+requests
+pytz
