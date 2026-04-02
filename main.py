@@ -27,9 +27,9 @@ out_cfg = config["output_settings"]
 #api_keys = config["api_keys"]
 
 
-env_owm_key = os.getenv("OWM_API_KEY")
+
 #if env_owm_key:
-api_keys["openweathermap"] = env_owm_key
+api_keys= os.getenv("OWM_API_KEY")
 
 
 # ==========================================
