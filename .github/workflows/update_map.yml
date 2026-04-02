@@ -4,7 +4,7 @@ on:
   schedule:
     # 定時執行設定 (此處為每 2 小時執行一次，使用 UTC 時間)
     # 你可以依需求修改 Cron 表達式，例如 '0 * * * *' 為每小時
-    - cron: '0 */2 * * *' 
+    - cron: '*/1 * * * *' 
   workflow_dispatch: # 保留這個，讓你可以隨時手動點擊按鈕強制執行測試
 
 permissions:
