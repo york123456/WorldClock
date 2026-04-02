@@ -31,7 +31,7 @@ jobs:
 
       - name: Run main.py
         env:
-          OWM_API_KEY: ${{ secrets.MY_SECRET_KEY }}
+          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
         run: python main.py
 
 
